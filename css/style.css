@@ -86,14 +86,14 @@
 
 @keyframes load {
     0% {
-        transform: rotate(1turn);
+        transform: rotate(-360deg);
     }
 }
 .ex-11-icon {
     font-size: 60px;
 }
 .ex-11-icon:hover {
-  animation: loadless 1s linear;
+  animation: loadless 1s linear infinite;
 }
 @keyframes loadless {
   0% {
@@ -134,4 +134,90 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+.ex-12-button:hover .ex-12-top-white {
+  animation: turntopwhite 2s linear;
+}
+@keyframes turntopwhite {
+  0% {
+    left: 10%;
+  }
+  50% {
+    left: calc(100% - 70px);
+  }
+  100% {
+    left: 10%;
+  }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: turnbottomwhite 2s linear;
+}
+@keyframes turnbottomwhite {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+}
+.ex-13-button:hover .ex-13-top-white {
+  animation: totallyturntopwhite 2s linear;
+}
+@keyframes totallyturntopwhite {
+  0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: totallyturnbottomwhite 2s linear;
+}
+@keyframes totallyturnbottomwhite {
+  0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
 }
